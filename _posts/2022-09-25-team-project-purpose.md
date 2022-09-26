@@ -31,6 +31,6 @@ title: SSJN Project Purpose
 
 ## Roles
 
-Scrum Master: Shreya Sapkal
-Frontend Developer: Noor Grewal
-Backend Developers: Sanika Shahapurkar & Jiya Savlani
+- Scrum Master: Shreya Sapkal
+- Frontend Developer: Noor Grewal
+- Backend Developers: Sanika Shahapurkar & Jiya Savlani
