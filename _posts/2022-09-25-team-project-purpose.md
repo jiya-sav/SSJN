@@ -24,4 +24,13 @@ title: SSJN Project Purpose
 ## Spotify x SSJN!
 
 ![]({{ site.baseurl }}/images/SSjn.png)
+
+> xxx
+
 ![]({{ site.baseurl }}/images/spotify.png)
+
+## Roles
+
+Scrum Master: Shreya Sapkal
+Frontend Developer: Noor Grewal
+Backend Developers: Sanika Shahapurkar & Jiya Savlani
