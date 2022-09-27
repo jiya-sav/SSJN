@@ -62,6 +62,22 @@
   
 
   
+      ,"page3": {
+          "title": "Rage",
+          "content": "Rage 😠 . . . List songs, collaborate with backend developers to create a python list for each emotion . Example songs: . “Numb” Linkin Park | “Testify” Rage Against The Machine | “Bat Country” Avenged Sevenfold | “T.N.T.” AC/DC | “King Nothing” Metallica | “Highway to Hell” AC/DC | “Devil’s Dance” Metallica | “I Hate Everything About You” Three Days Grace | .",
+          "url": "https://jiya-sav.github.io/SSJN/rage/",
+          "relUrl": "/rage/",
+          "date": ""
+      }
+      
+  
+
+  
+  
+
+  
+
+  
   
 
   
@@ -70,18 +86,13 @@
   
 
   
-
-  
   
 
   
   
 
   
-  
-
-  
-      ,"page10": {
+      ,"page11": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://jiya-sav.github.io/SSJN/robots.txt",
