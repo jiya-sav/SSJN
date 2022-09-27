@@ -8,7 +8,7 @@ permalink: /rage/
 
 ---
 
-![Rage!](/images/abstract-emotion-rage.jpg "Rage")
+![]({{ site.baseurl }}/images/rage.jpg)
 
 List songs, collaborate with backend developers to create a python list for each emotion
 
