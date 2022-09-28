@@ -25,7 +25,6 @@ permalink: /melancholy/
 - ["First Love/Late Spring" Mitski](https://www.youtube.com/watch?v=WCphVz0ZGns)
 - ["YKWIM?" Yot Club](https://www.youtube.com/watch?v=dxKmowmETo4)
 - ["Last Words of a Shooting Star" Mitski](https://www.youtube.com/watch?v=ssVf326Ox9g)
-- ["Something In The Way" Nirvana](https://www.youtube.com/watch?v=4VxdufqB9zg)
 - ["Liquid Smooth" Mitski](https://www.youtube.com/watch?v=Bfurc6KcMwk)
 - ["While My Guitar Gently Weeps" The Beatles](https://www.youtube.com/watch?v=VJDJs9dumZI)
 - ["Francis Forever" Mitski](https://www.youtube.com/watch?v=UMJm_97QXHA)
