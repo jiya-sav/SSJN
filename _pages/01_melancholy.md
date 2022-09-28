@@ -17,7 +17,8 @@ permalink: /melancholy/
 
 ### Output
 > Program outputs a list of songs to match the melancholy emotion
-> Collaborate with backend developers to create a python list for each emotion; output includes links to the songs recommended
+
+- Collaborate with backend developers to create a python list for each emotion; output includes links to the songs recommended
 
 **Example songs:**
 
