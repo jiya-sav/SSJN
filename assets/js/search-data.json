@@ -47,9 +47,7 @@
 
   
   
-
-  
-      ,"page1": {
+      ,"page0": {
           "title": "About Us",
           "content": "Hello! This is the SSJN Group Repository where we will be blogging about our group projects and individual interests we want to share. . . Name Fun Fact Role . Sanika | I love music, going to concerts, and thrifting! | Backend Developer | . Noor | I enjoy painting, traveling, and sleeping. I have 5 pets (3 dogs, 2 cats) | Frontend Developer | . Shreya | I love hiking, karate, and studying engine maintenance manuals. | Scrum Master | . Jiya | I like to read, play the piano, and spend time with my family at the beach. | Backend Developer | .",
           "url": "https://jiya-sav.github.io/SSJN/about/",
@@ -60,9 +58,18 @@
   
 
   
+      ,"page1": {
+          "title": "Melancholy",
+          "content": "Melancholy 😔 . . . Input . User enters “sad,” “melancholy,” or any synonym into text box input: . . Output . Program outputs a list of songs to match the melancholy emotion Collaborate with backend developers to create a python list for each emotion; output includes links to the songs recommended . Example songs: . “First Love/Late Spring” Mitski | “YKWIM?” Yot Club | “Last Words of a Shooting Star” Mitski | “Something In The Way” Nirvana | “Liquid Smooth” Mitski | “While My Guitar Gently Weeps” The Beatles | “Francis Forever” Mitski | “Thank You” Dido | “I Bet on Losing Dogs” Mitski | “Twilight” bôa | “People” Agust D | “It just is” eaj ft. Seori | “Who” Lauv ft. BTS | “eclipse” ASH ISLAND | “Pity Party” Melanie Martinez | “See You Again” Wiz Khalifa ft. Charlie Puth | “Let You Down” NF | “Better Now” Post Malone | “One Last Time” Ariana Grande | “Dive with you” Seori ft. eaj | .",
+          "url": "https://jiya-sav.github.io/SSJN/melancholy/",
+          "relUrl": "/melancholy/",
+          "date": ""
+      }
+      
+  
 
   
-      ,"page3": {
+      ,"page2": {
           "title": "Joy",
           "content": "Joy! . . . List songs, collaborate with backend developers to create a python list for each emotion . Example songs: . “Bumblebee” Dora Jar | “Jackie and Wilson” Hozier | “Pumpkin” Regrettes | “Solar Power” Lorde | “Marvelous” Wallows | “Island In The Sun” Weezer | “Olivia” One Direction | “Mr. Blue Sky” Electric Light Orchestra | .",
           "url": "https://jiya-sav.github.io/SSJN/joy/",
@@ -73,18 +80,7 @@
   
 
   
-      ,"page4": {
-          "title": "Melancholy",
-          "content": "Melancholy 😔 . . . Input . User enters “sad,” “melancholy,” or any synonym into text box input: . . Output . Program outputs a list of songs to match the melancholy emotion Collaborate with backend developers to create a python list for each emotion; output includes links to the songs recommended . Example songs: «««&lt; HEAD . “First Love/Late Spring” Mitski | “YKWIM?” Yot Club | “Last Words of a Shooting Star” Mitski | “Something In The Way” Nirvana | “Liquid Smooth” Mitski | “While My Guitar Gently Weeps” The Beatles | “Francis Forever” Mitski | “Thank You” Dido | “I Bet on Losing Dogs” Mitski | “Duvet” bôa . | “First Love/Late Spring” Mitski | “YKWIM?” Yot Club | “Last Words of a Shooting Star” Mitski | “Something In The Way” Nirvana | “Liquid Smooth” Mitski | “While My Guitar Gently Weeps” The Beatles | “Francis Forever” Mitski | “Thank You” Dido | “I Bet on Losing Dogs” Mitski | “Twilight” bôa 9ce36f89ac3ee84e315fe897d7fb39faa737a4e4 . | “People” Agust D | “It just is” eaj ft. Seori | “Who” Lauv ft. BTS | “eclipse” ASH ISLAND | “Pity Party” Melanie Martinez | “See You Again” Wiz Khalifa ft. Charlie Puth | “Let You Down” NF | “Better Now” Post Malone «««&lt; HEAD | “One Last Time” Ariana Grande | “Dive with you” Seori ft. eaj . 9ce36f89ac3ee84e315fe897d7fb39faa737a4e4 . | .",
-          "url": "https://jiya-sav.github.io/SSJN/melancholy/",
-          "relUrl": "/melancholy/",
-          "date": ""
-      }
-      
-  
-
-  
-      ,"page5": {
+      ,"page3": {
           "title": "Rage",
           "content": "Rage 😠 . . . List songs, collaborate with backend developers to create a python list for each emotion . Example songs: . “Numb” Linkin Park | “Testify” Rage Against The Machine | “Bat Country” Avenged Sevenfold | “T.N.T.” AC/DC | “King Nothing” Metallica | “Highway to Hell” AC/DC | “Devil’s Dance” Metallica | “I Hate Everything About You” Three Days Grace | “Motorbreath” Metallica | .",
           "url": "https://jiya-sav.github.io/SSJN/rage/",
@@ -92,6 +88,10 @@
           "date": ""
       }
       
+  
+
+  
+
   
 
   
