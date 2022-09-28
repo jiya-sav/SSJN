@@ -10,9 +10,9 @@ permalink: /sad/
 
 ![]({{ site.baseurl }}/images/melancholy.jpg)
 
-### User enters "sad," "melancholy," or any synonym into text box input:
+### User enters "sad," or any synonym into text box input:
 
-![]({{ site.baseurl }}/images/textbox.png)
+![]({{ site.baseurl }}/images/text_box.png)
 
 ### Program outputs a list of songs to match the sad emotion
 > Collaborate with backend developers to create a python list for each emotion; output includes links to the songs recommended
