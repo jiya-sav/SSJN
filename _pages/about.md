@@ -1,9 +1,16 @@
 ---
 layout: page
-title: About Me
+title: About Us
 permalink: /about/
 ---
 
-This website is powered by **[fastpages](https://github.com/fastai/fastpages)** [^1].
+Hello! This is the SSJN Group Repository where we will be blogging about our group projects and individual interests we want to share. 
 
-Hi 
+![]({{ site.baseurl }}/images/SSjn.png)
+
+| Name      | Fun Fact | Role |
+| ----------- | ----------- |
+| Sanika     | I love music, going to concerts, and thrifting!| Backend Developer |
+| Noor   | Text        | Frontend Developer |
+| Shreya | x | Scrum Master |
+| Jiya | x | Backend Developer |
