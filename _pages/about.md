@@ -10,7 +10,7 @@ Hello! This is the SSJN Group Repository where we will be blogging about our gro
 
 | Name      | Fun Fact | Role |
 | ----------- | ----------- |
-| Sanika     | I love music, going to concerts, and thrifting!| Backend Developer |
-| Noor   | Text        | Frontend Developer |
+| Sanika | I love music, going to concerts, and thrifting!| Backend Developer |
+| Noor   | I enjoy painting, traveling, and sleeping. I have 5 pets (3 dogs, 2 cats) | Frontend Developer |
 | Shreya | x | Scrum Master |
 | Jiya | x | Backend Developer |
