@@ -95,17 +95,6 @@
   
 
   
-      ,"page6": {
-          "title": "Sad",
-          "content": "Sad :( . . . User enters “sad,” or any synonym into text box input: . . Program outputs a list of songs to match the sad emotion . Collaborate with backend developers to create a python list for each emotion; output includes links to the songs recommended . Example songs: . “People” Agust D | “It just is” eaj ft. Seori | “Who” Lauv ft. BTS | “eclipse” ASH ISLAND | “Pity Party” Melanie Martinez | “See You Again” Wiz Khalifa ft. Charlie Puth | “Let You Down” NF | “Better Now” Post Malone | “One Last Time” Ariana Grande | “Dive with you” Seori ft. eaj | .",
-          "url": "https://jiya-sav.github.io/SSJN/sad/",
-          "relUrl": "/sad/",
-          "date": ""
-      }
-      
-  
-
-  
   
 
   
@@ -125,7 +114,7 @@
   
 
   
-      ,"page14": {
+      ,"page13": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://jiya-sav.github.io/SSJN/robots.txt",
