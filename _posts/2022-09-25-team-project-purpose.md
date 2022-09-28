@@ -19,7 +19,8 @@ title: SSJN Project Purpose
 ## How it will Work
 
 1. Users enter their current emotion into a text entry box
-2. The program outputs a list of songs that match their current emotion, with spotify links embedded, so the users can explore new music!
+2. User is then prompted to fill out an optional survey to further personalize song list.
+3. The program outputs a list of songs that match their current emotion, with spotify links embedded, so the users can explore new music!
 
 ## Spotify x SSJN!
 
