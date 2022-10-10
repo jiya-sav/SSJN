@@ -41,7 +41,6 @@ permalink: /melancholy/
 - ["Better Now" Post Malone](https://open.spotify.com/track/7dt6x5M1jzdTEt8oCbisTK?si=267bfd59bb1348dd)
 - ["One Last Time" Ariana Grande](https://open.spotify.com/track/7xoUc6faLbCqZO6fQEYprd?si=12326eebe4c844e3)
 - ["Dive with you" Seori ft. eaj](https://open.spotify.com/track/5RqwjQWDwxQ3HTkOfXTrS6?si=8fc3e59a43b34504)
-
 - ["The One That Got Away" Katy Perry](https://www.youtube.com/watch?v=Ahha3Cqe_fk)
 - ["Breakeven" The Script](https://www.youtube.com/watch?v=MzCLLHscMOw)
 - ["Let Her Go" Passenger](https://www.youtube.com/watch?v=RBumgq5yVrA)
