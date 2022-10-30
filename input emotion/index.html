@@ -88,6 +88,15 @@ window.onload = wrap_img;
 
   <script>
    
+   function getSongs(){
+   var type = document.getElementById("emotion");
+   if(type=='Joy'){
+    document.getElementById("randomSong").innerHTML = GetRandom(sad);
+     }
+   else if(type=='Melancholy'){
+    document.getElementById("randomSong").innerHTML = GetRandom(happy);
+      }
+   }
   //   const url = "https://ssjn.nighthawkcodescrums.gq/api/song/";
 
   //   function getSongs() {
@@ -157,9 +166,8 @@ window.onload = wrap_img;
     // });
     console.log(happy);
     console.log(sad);
-       document.getElementById("song").innerHTML = JSON.stringify(data);
-       document.getElementById("randomSong").innerHTML = GetRandom(sad);
-      
+       //document.getElementById("song").innerHTML = JSON.stringify(data);
+       
     
     }));
   
