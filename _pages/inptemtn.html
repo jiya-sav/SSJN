@@ -18,6 +18,8 @@ Enter one of the following emotions into the box:
     <!-- <input type="submit" value="generate songs"> -->
     <button id="runAPI" onclick="getSongs()">Get Songs</button>
     <p id="song"></p>
+    <p>"Random Song For You:"</p>
+    <p id="randomSong"></p>
   </form>
 
   <script>
@@ -37,6 +39,8 @@ Enter one of the following emotions into the box:
 
   //GET
 function getData(url) {
+  var sad=[];
+  var happy=[];
   const response = fetch(url, {
     method: "GET",
     headers: { "Content-Type": "application/json" },
@@ -48,15 +52,29 @@ function getData(url) {
       data.forEach(obj => {
         Object.entries(obj).forEach(([key, value]) => {
             console.log(`${key} ${value}`);
+            if(key == 'happy'{
+               happy.push(value);
+            }
+            if(key=='sad'){
+                sad.push(value);
+            }
         });
         console.log('-------------------');
-    });   
+    }); 
+    console.log(happy);
+    console.log(sad);
       document.getElementById("song").innerHTML = JSON.stringify(data);
+      document.getElementById("randomSong").innerHTML = GetRandom(sad);
+      
     }))
   }
   
 
-
-
+GetRandom(arr)
+{
+  var rI = Math.floor(Math.random() * arr.length); 
+  var rE  = textArray[rI];
+  return rE;
+}
    
   </script>
