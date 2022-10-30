@@ -89,7 +89,7 @@ window.onload = wrap_img;
   <script>
    
    function getSongs(){
-   var type = document.getElementById("emotion");
+   var type = document.getElementById("emotion").value;
    if(type=='Joy'){
     document.getElementById("randomSong").innerHTML = GetRandom(sad);
      }
