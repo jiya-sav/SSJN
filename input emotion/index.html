@@ -108,15 +108,14 @@ window.onload = wrap_img;
     },
   };
   
-  function getSongs(){
-
+  
   
   // fetch the API
   fetch(url,headers)
   .then((response) => response.json())
   .then((data) => document.getElementById("song").innerHTML = JSON.stringify(data))
       
-  }
+  
   // catch fetch errors (ie ACCESS to server blocked)
   
 
