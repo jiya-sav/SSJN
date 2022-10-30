@@ -17,17 +17,17 @@ Enter one of the following emotions into the box:
     <input type="text" id="emotion" name="emotion"><br>
     <!-- <input type="submit" value="generate songs"> -->
     <!-- <button id="runAPI" onclick="getSongs()">Get Songs</button> -->
+    <input type="submit" value="generate songs">
     <p>"Random Song For You:"</p>
     <p id="song"></p>
     
     <p id="randomSong"></p>
-    <input type="submit" value="generate songs">
-   
   </form>
 
   <script>
    
    function getSongs(){
+    document.getElementById("emotion").value = emotion;
    var type = document.getElementById("emotion").value;
    if(type=='Joy'){
     document.getElementById("song").innerHTML = (GetRandom(sad));
@@ -37,6 +37,8 @@ Enter one of the following emotions into the box:
       }
       
    }
+
+   var emotion = document.getElementById("emotion").value;
   //   const url = "https://ssjn.nighthawkcodescrums.gq/api/song/";
 
   //   function getSongs() {
