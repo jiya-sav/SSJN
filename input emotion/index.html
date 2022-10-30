@@ -99,11 +99,13 @@ window.onload = wrap_img;
    
 
   //GET
-async function getData(url) {
-  const response = await fetch(url, {
+function getData(url) {
+  const response = fetch(url, {
     method: "GET",
     headers: { "Content-Type": "application/json" },
     mode: "cors",
+    cache: 'default', // *default, no-cache, reload, force-cache, only-if-cached
+    credentials: 'omit' // include, *same-origin, omit
   });
   return response.json();
 }
