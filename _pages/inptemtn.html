@@ -42,8 +42,8 @@ function getData(url) {
     mode: "cors",
     cache: 'default', // *default, no-cache, reload, force-cache, only-if-cached
     credentials: 'omit' // include, *same-origin, omit
-  });
-  return response.json();
+  }).then((data)=>{ return response.data});
+  
 }
 
 
