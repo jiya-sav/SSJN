@@ -48,13 +48,9 @@ Enter one of the following emotions into the box:
 
   
   // fetch the API
-  fetch("https://ssjn.nighthawkcodescrums.gq/api/song/")
-    // response is a RESTful "promise" on any successful fetch
-    .then((response) => {
-            console.log(JSON.parse(response));
-            document.getElementById("song").innerHTML = JSON.stringify(response);
-     
-          })
+  fetch(url,headers)
+  .then((response) => response.json())
+  .then((data) => document.getElementById("song").innerHTML = JSON.stringify(data))
       
   }
   // catch fetch errors (ie ACCESS to server blocked)
