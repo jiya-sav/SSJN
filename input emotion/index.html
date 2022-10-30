@@ -81,7 +81,7 @@ window.onload = wrap_img;
     <input type="text" id="emotion" name="emotion"><br>
     <!-- <input type="submit" value="generate songs"> -->
     <button id="runAPI" onclick="getSongs()">Get Songs</button>
-    <input type="submit" value="generate songs">
+    <!-- <input type="submit" value="generate songs"> -->
     <p>"Random Song For You:"</p>
     <p id="song"></p>
     
@@ -91,7 +91,7 @@ window.onload = wrap_img;
   <script>
    
    function getSongs(){
-    document.getElementById("emotion").value = emotion;
+    //document.getElementById("emotion").value = emotion;
    var type = document.getElementById("emotion").value;
    if(type=='Joy'){
     document.getElementById("song").innerHTML = (GetRandom(sad));
