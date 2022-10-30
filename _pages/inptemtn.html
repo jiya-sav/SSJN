@@ -45,7 +45,13 @@ function getData(url) {
     credentials: 'omit' // include, *same-origin, omit
   }).then(response=> 
     response.json().then(data => {
-          document.getElementById("song").innerHTML = JSON.stringify(data);
+      data.forEach(obj => {
+        Object.entries(obj).forEach(([key, value]) => {
+            console.log(`${key} ${value}`);
+        });
+        console.log('-------------------');
+    });   
+      document.getElementById("song").innerHTML = JSON.stringify(data);
     }))
   }
   
