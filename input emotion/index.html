@@ -91,10 +91,10 @@ window.onload = wrap_img;
    function getSongs(){
    var type = document.getElementById("emotion").value;
    if(type=='Joy'){
-    document.getElementById("randomSong").innerHTML = GetRandom(sad);
+    document.getElementById("randomSong").appendChild(GetRandom(sad));
      }
    else if(type=='Melancholy'){
-    document.getElementById("randomSong").innerHTML = GetRandom(happy);
+    document.getElementById("randomSong").appendChild(GetRandom(happy));
       }
    }
   //   const url = "https://ssjn.nighthawkcodescrums.gq/api/song/";
