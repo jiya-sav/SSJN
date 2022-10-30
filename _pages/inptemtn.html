@@ -46,6 +46,7 @@ function getData(url) {
     credentials: 'omit' // include, *same-origin, omit
   }).then(response=> 
     response.json().then(data => {
+          console.log(data);
     //   data.forEach(obj => {
     //     Object.entries(obj).forEach(([key, value]) => {
     //         console.log(`${key} ${value}`);
@@ -63,7 +64,8 @@ function getData(url) {
        document.getElementById("song").innerHTML = JSON.stringify(data);
     //   document.getElementById("randomSong").innerHTML = GetRandom(sad);
       
-    })); 
+    //}
+    }));
   }
   
 
