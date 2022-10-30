@@ -91,9 +91,10 @@ window.onload = wrap_img;
     function getSongs() {
   getData(
     "https://ssjn.nighthawkcodescrums.gq/api/song/"
-  ).then((data) => {
-    document.getElementById("song").innerHTML = JSON.stringify(data);
-  })
+  );
+  
+  
+  
 }
 
    
@@ -106,9 +107,13 @@ function getData(url) {
     mode: "cors",
     cache: 'default', // *default, no-cache, reload, force-cache, only-if-cached
     credentials: 'omit' // include, *same-origin, omit
-  }).then((data)=>{ return response.data});
+  }).then(response=> 
+    response.json().then(data => {
+          document.getElementById("song").innerHTML = JSON.stringify(data);
+    })
+  }
   
-}
+
 
 
    
