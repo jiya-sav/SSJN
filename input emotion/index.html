@@ -112,33 +112,18 @@ window.onload = wrap_img;
 
   
   // fetch the API
-  fetch(url, headers)
+  fetch("https://ssjn.nighthawkcodescrums.gq/api/song/")
     // response is a RESTful "promise" on any successful fetch
-    .then(response => {
-      // check for response errors
-      if (response.status !== 200) {
-          const errorMsg = 'Database response error: ' + response.status;
-          console.log(errorMsg);
-          const tr = document.createElement("tr");
-          const td = document.createElement("td");
-          td.innerHTML = errorMsg;
-          tr.appendChild(td);
-          resultContainer.appendChild(tr);
-          return;
-      }
-      // valid response will have json data
-      response.json().then(data => {
+    .then((response) => response.json())
+      .then(data => {
           console.log(data);
             document.getElementById("song").innerHTML = JSON.stringify(response);
      
           }
       )
-  })
+  }
   // catch fetch errors (ie ACCESS to server blocked)
-  .catch(err => {
-    console.error(err);
-    });
-  } 
+  
 
 //   //GET
 // function getData(url) {
