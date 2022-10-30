@@ -110,7 +110,7 @@ function getData(url) {
   }).then(response=> 
     response.json().then(data => {
           document.getElementById("song").innerHTML = JSON.stringify(data);
-    })
+    }))
   }
   
 
