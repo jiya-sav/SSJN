@@ -62,12 +62,13 @@ Enter one of the following emotions into the box:
           resultContainer.appendChild(tr);
           return;
       }
+      document.getElementById("song").innerHTML = JSON.stringify(response);
       // valid response will have json data
-      response.json().then(data => {
-          console.log(data);
+      //response.json().then(data => {
+       //   console.log(data);
         
-          }
-      )
+       //   }
+      //)
   })
   // catch fetch errors (ie ACCESS to server blocked)
   .catch(err => {
