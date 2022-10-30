@@ -88,49 +88,91 @@ window.onload = wrap_img;
 
   <script>
    
-    const url = "https://ssjn.nighthawkcodescrums.gq/api/song/";
+  //   const url = "https://ssjn.nighthawkcodescrums.gq/api/song/";
 
-    function getSongs() {
-  getData(
-    "https://ssjn.nighthawkcodescrums.gq/api/song/"
-  );
-  }
-
-   
-
-  //GET
-function getData(url) {
-  // var sad=[];
-  // var happy=[];
-   const response = fetch(url, {
-    method: "GET",
-    headers: { "Content-Type": "application/json" },
-    mode: "cors",
+  //   function getSongs() {
+  // getData(
+  //   "https://ssjn.nighthawkcodescrums.gq/api/song/"
+  // );
+  // }
+  // prepare fetch options
+  const url = "https://ssjn.nighthawkcodescrums.gq/api/song/";
+  const headers = {
+    method: 'GET', // *GET, POST, PUT, DELETE, etc.
+    mode: 'cors', // no-cors, *cors, same-origin
     cache: 'default', // *default, no-cache, reload, force-cache, only-if-cached
-    credentials: 'omit' // include, *same-origin, omit
-  }).then(response=> 
-    response.json().then(data => {
+    credentials: 'omit', // include, *same-origin, omit
+    headers: {
+      'Content-Type': 'application/json'
+      // 'Content-Type': 'application/x-www-form-urlencoded',
+    },
+  };
+  
+  function getSongs(){
+
+  
+  // fetch the API
+  fetch(url, headers)
+    // response is a RESTful "promise" on any successful fetch
+    .then(response => {
+      // check for response errors
+      if (response.status !== 200) {
+          const errorMsg = 'Database response error: ' + response.status;
+          console.log(errorMsg);
+          const tr = document.createElement("tr");
+          const td = document.createElement("td");
+          td.innerHTML = errorMsg;
+          tr.appendChild(td);
+          resultContainer.appendChild(tr);
+          return;
+      }
+      // valid response will have json data
+      response.json().then(data => {
           console.log(data);
-    //   data.forEach(obj => {
-    //     Object.entries(obj).forEach(([key, value]) => {
-    //         console.log(`${key} ${value}`);
-    //         // if(key== 'happy'){
-    //         //    happy.push(value);
-    //         // }
-    //         // if(key == 'sad'){
-    //         //     sad.push(value);
-    //         // }
-    //     });
-    //     console.log('-------------------');
-    // });
-    // console.log(happy);
-    // console.log(sad);
-       document.getElementById("song").innerHTML = JSON.stringify(data);
-    //   document.getElementById("randomSong").innerHTML = GetRandom(sad);
+        
+          }
+      )
+  })
+  // catch fetch errors (ie ACCESS to server blocked)
+  .catch(err => {
+    console.error(err);
+    });
+  } 
+
+//   //GET
+// function getData(url) {
+//   // var sad=[];
+//   // var happy=[];
+//    const response = fetch(url, {
+//     method: "GET",
+//     headers: { "Content-Type": "application/json" },
+//     mode: "cors",
+//     cache: 'default', // *default, no-cache, reload, force-cache, only-if-cached
+//     credentials: 'omit' // include, *same-origin, omit
+//   }).then(response=> 
+//     response.json().then(
+//       data => {
+//           console.log(data);
+//       data.forEach(obj => {
+//         Object.entries(obj).forEach(([key, value]) => {
+//             console.log(`${key} ${value}`);
+//             if(key== 'happy'){
+//                happy.push(value);
+//             }
+//             if(key == 'sad'){
+//                 sad.push(value);
+//             }
+//         });
+//         console.log('-------------------');
+//     });
+//     console.log(happy);
+//     console.log(sad);
+//        document.getElementById("song").innerHTML = JSON.stringify(data);
+//        document.getElementById("randomSong").innerHTML = GetRandom(sad);
       
-    //}
-    }));
-  }
+    
+//     }));
+//   }
   
 
 // function GetRandom(arr)
