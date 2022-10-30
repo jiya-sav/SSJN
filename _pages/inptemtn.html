@@ -15,5 +15,35 @@ Enter one of the following emotions into the box:
 <form>
     <label for="emotion">Feeling Emotional?:</label><br>
     <input type="text" id="emotion" name="emotion"><br>
-    <input type="submit" value="generate songs">
+    <!-- <input type="submit" value="generate songs"> -->
+    <button id="runAPI" onclick="getSongs()">Get Songs</button>
+    <p id="song"></p>
   </form>
+
+  <script>
+   
+    const url = "https://ssjn.nighthawkcodescrums.gq/api/song/";
+
+    function getSongs() {
+  getData(
+    "https://ssjn.nighthawkcodescrums.gq/api/song/"
+  ).then((data) => {
+    document.getElementById("song").innerHTML = JSON.stringify(data);
+  })
+}
+
+   
+
+  //GET
+async function getData(url) {
+  const response = await fetch(url, {
+    method: "GET",
+    headers: { "Content-Type": "application/json" },
+    mode: "cors",
+  });
+  return response.json();
+}
+
+
+   
+  </script>
