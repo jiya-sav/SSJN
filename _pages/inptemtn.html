@@ -30,18 +30,15 @@ Enter one of the following emotions into the box:
   getData(
     "https://ssjn.nighthawkcodescrums.gq/api/song/"
   );
-  
-  
-  
-}
+  }
 
    
 
   //GET
 function getData(url) {
-  var sad=[];
-  var happy=[];
-  const response = fetch(url, {
+  // var sad=[];
+  // var happy=[];
+   const response = fetch(url, {
     method: "GET",
     headers: { "Content-Type": "application/json" },
     mode: "cors",
@@ -49,18 +46,18 @@ function getData(url) {
     credentials: 'omit' // include, *same-origin, omit
   }).then(response=> 
     response.json().then(data => {
-      data.forEach(obj => {
-        Object.entries(obj).forEach(([key, value]) => {
-            console.log(`${key} ${value}`);
-            // if(key== 'happy'){
-            //    happy.push(value);
-            // }
-            // if(key == 'sad'){
-            //     sad.push(value);
-            // }
-        });
-        console.log('-------------------');
-    });
+    //   data.forEach(obj => {
+    //     Object.entries(obj).forEach(([key, value]) => {
+    //         console.log(`${key} ${value}`);
+    //         // if(key== 'happy'){
+    //         //    happy.push(value);
+    //         // }
+    //         // if(key == 'sad'){
+    //         //     sad.push(value);
+    //         // }
+    //     });
+    //     console.log('-------------------');
+    // });
     // console.log(happy);
     // console.log(sad);
        document.getElementById("song").innerHTML = JSON.stringify(data);
