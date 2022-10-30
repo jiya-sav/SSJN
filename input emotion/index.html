@@ -116,19 +116,19 @@ function getData(url) {
       data.forEach(obj => {
         Object.entries(obj).forEach(([key, value]) => {
             console.log(`${key} ${value}`);
-            if(key == 'happy'){
-               happy.push(value);
-            }
-            if(key=='sad'){
-                sad.push(value);
-            }
+            // if(key== 'happy'){
+            //    happy.push(value);
+            // }
+            // if(key == 'sad'){
+            //     sad.push(value);
+            // }
         });
         console.log('-------------------');
     });
-    console.log(happy);
-    console.log(sad);
-      document.getElementById("song").innerHTML = JSON.stringify(data);
-      document.getElementById("randomSong").innerHTML = GetRandom(sad);
+    // console.log(happy);
+    // console.log(sad);
+       document.getElementById("song").innerHTML = JSON.stringify(data);
+    //   document.getElementById("randomSong").innerHTML = GetRandom(sad);
       
     })); 
   }
