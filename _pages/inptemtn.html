@@ -32,70 +32,68 @@ Enter one of the following emotions into the box:
   // );
   // }
   // prepare fetch options
-  const url = "https://ssjn.nighthawkcodescrums.gq/api/song/";
-  const headers = {
-    method: 'GET', // *GET, POST, PUT, DELETE, etc.
-    mode: 'cors', // no-cors, *cors, same-origin
-    cache: 'default', // *default, no-cache, reload, force-cache, only-if-cached
-    credentials: 'omit', // include, *same-origin, omit
-    headers: {
-      'Content-Type': 'application/json'
-      // 'Content-Type': 'application/x-www-form-urlencoded',
-    },
-  };
+  // const url = "https://ssjn.nighthawkcodescrums.gq/api/song/";
+  // const headers = {
+  //   method: 'GET', // *GET, POST, PUT, DELETE, etc.
+  //   mode: 'cors', // no-cors, *cors, same-origin
+  //   cache: 'default', // *default, no-cache, reload, force-cache, only-if-cached
+  //   credentials: 'omit', // include, *same-origin, omit
+  //   headers: {
+  //     'Content-Type': 'application/json'
+  //     // 'Content-Type': 'application/x-www-form-urlencoded',
+  //   },
+  // };
   
   
   
-  // fetch the API
-  fetch(url,headers)
-  .then((response) => response.json())
-  .then((data) => document.getElementById("song").innerHTML = JSON.stringify(data))
+  // // fetch the API
+  // fetch(url,headers)
+  // .then((response) => response.json())
+  // .then((data) => document.getElementById("song").innerHTML = JSON.stringify(data))
       
   
   // catch fetch errors (ie ACCESS to server blocked)
   
 
-//   //GET
-// function getData(url) {
-//   // var sad=[];
-//   // var happy=[];
-//    const response = fetch(url, {
-//     method: "GET",
-//     headers: { "Content-Type": "application/json" },
-//     mode: "cors",
-//     cache: 'default', // *default, no-cache, reload, force-cache, only-if-cached
-//     credentials: 'omit' // include, *same-origin, omit
-//   }).then(response=> 
-//     response.json().then(
-//       data => {
-//           console.log(data);
-//       data.forEach(obj => {
-//         Object.entries(obj).forEach(([key, value]) => {
-//             console.log(`${key} ${value}`);
-//             if(key== 'happy'){
-//                happy.push(value);
-//             }
-//             if(key == 'sad'){
-//                 sad.push(value);
-//             }
-//         });
-//         console.log('-------------------');
-//     });
-//     console.log(happy);
-//     console.log(sad);
-//        document.getElementById("song").innerHTML = JSON.stringify(data);
-//        document.getElementById("randomSong").innerHTML = GetRandom(sad);
+  var sad=[];
+  var happy=[];
+   const response = fetch(url, {
+    method: "GET",
+    headers: { "Content-Type": "application/json" },
+    mode: "cors",
+    cache: 'default', // *default, no-cache, reload, force-cache, only-if-cached
+    credentials: 'omit' // include, *same-origin, omit
+  }).then(response=> 
+    response.json().then(
+      data => {
+          console.log(data);
+      data.forEach(obj => {
+        Object.entries(obj).forEach(([key, value]) => {
+            console.log(`${key} ${value}`);
+            if(key== 'happy'){
+               happy.push(value);
+            }
+            if(key == 'sad'){
+                sad.push(value);
+            }
+        });
+        console.log('-------------------');
+    });
+    console.log(happy);
+    console.log(sad);
+       document.getElementById("song").innerHTML = JSON.stringify(data);
+       document.getElementById("randomSong").innerHTML = GetRandom(sad);
       
     
-//     }));
-//   }
+    }));
+  
   
 
-// function GetRandom(arr)
-// {
-//   var rI = Math.floor(Math.random() * arr.length); 
-//   var rE  = textArray[rI];
-//   return rE;
-// }
+function GetRandom(arr)
+{
+  var rI = Math.floor(Math.random() * arr.length); 
+  var rE  = textArray[rI];
+  return rE;
+}
    
   </script>
