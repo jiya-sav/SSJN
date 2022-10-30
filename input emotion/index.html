@@ -80,10 +80,11 @@ window.onload = wrap_img;
     <label for="emotion">Feeling Emotional?:</label><br>
     <input type="text" id="emotion" name="emotion"><br>
     <!-- <input type="submit" value="generate songs"> -->
-    <button id="runAPI" onclick="getSongs()">Get Songs</button>
-    <p id="song"></p>
+   <p id="song"></p>
     <p>"Random Song For You:"</p>
     <p id="randomSong"></p>
+    <button id="runAPI" onclick="getSongs()">Get Songs</button>
+    
   </form>
 
   <script>
@@ -91,10 +92,10 @@ window.onload = wrap_img;
    function getSongs(){
    var type = document.getElementById("emotion").value;
    if(type=='Joy'){
-    document.getElementById("randomSong").appendChild(GetRandom(sad));
+    document.getElementById("randomSong").innerHTML += (GetRandom(sad));
      }
    else if(type=='Melancholy'){
-    document.getElementById("randomSong").appendChild(GetRandom(happy));
+    document.getElementById("randomSong").innerHTML += (GetRandom(happy));
       }
    }
   //   const url = "https://ssjn.nighthawkcodescrums.gq/api/song/";
@@ -145,10 +146,10 @@ window.onload = wrap_img;
   console.log('Happy: ' + item.happy);
   console.log('Sad: ' + item.sad);
   console.log('Song: ' + item.song);
-  if(item.happy=='1'){
+  if(item.happy>1){
     happy.push(item.song);
   }
-  if(item.sad=='1'){
+  if(item.sad>1){
     sad.push(item.song);
   }
 });
