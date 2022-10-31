@@ -69,7 +69,7 @@ window.onload = wrap_img;
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        Enter one of the following emotions into the box: 
+        Enter your emotion into the box: 
 <ul>
   <li>Melancholy</li>
   <li>Joy</li>
@@ -91,10 +91,11 @@ window.onload = wrap_img;
    function getSongs(){
     //document.getElementById("emotion").value = emotion;
    var type = document.getElementById("emotion").value;
-   if(type=='Joy' || type == 'Happy' || type== 'Elated'){
+   // synonyms are added by || type== ''
+   if(type=='joyous' || type == 'happy' || type== 'elated' || type== 'cheerful' || type== 'gleeful' || type== 'delighted' || type== 'jolly'){
     document.getElementById("song").innerHTML = (GetRandom(happy));
      }
-   else if(type=='Melancholy' || type=='sad'){
+   else if(type=='melancholy' || type=='sad' || type== 'unhappy' || type== 'dejected' || type== 'sorrowful' || type== 'depressed' || type== 'miserable' || type== 'pessimistic' || type== 'mournful' || type== 'heartbroken'){
     document.getElementById("song").innerHTML = (GetRandom(sad));
       }
       
@@ -143,6 +144,8 @@ window.onload = wrap_img;
 
 function GetRandom(arr)
 {
+  // Math.RAndon gets a randon number between 0 and 1 and then we multiply it with array length.
+  // Floor gives the he Math.floor() function always rounds down and returns the largest integer less than or equal to a given number.
   var rI = Math.floor(Math.random() * arr.length); 
   var rE  = arr[rI];
   return rE;
