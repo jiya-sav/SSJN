@@ -5,11 +5,12 @@ title: Input Emotion
 search_exclude: true
 ---
 
-Enter your emotion into the box: 
+Enter a synonym for any of these emotions into the box: 
 <ul>
   <li>Melancholy</li>
   <li>Joy</li>
   <li>Rage</li>
+  <li>Indian</li>
 </ul>
 
 <form onsubmit="return false">
@@ -33,7 +34,10 @@ Enter your emotion into the box:
      }
    else if(type=='melancholy' || type=='sad' || type== 'unhappy' || type== 'dejected' || type== 'sorrowful' || type== 'depressed' || type== 'miserable' || type== 'pessimistic' || type== 'mournful' || type== 'heartbroken'){
     document.getElementById("song").innerHTML = (GetRandom(sad));
-      }
+     }
+   else if(type=='indian' || type == 'desi' || type=='brown' || type=='south asian' || type=='abcd'){
+    document.getElementById("song").innerHTML = (GetRandom(Indian));
+     }
       
    }
 
@@ -60,6 +64,7 @@ Enter your emotion into the box:
   console.log('ID: ' + item.id);
   console.log('Happy: ' + item.happy);
   console.log('Sad: ' + item.sad);
+  console.log('Indian: ' + item.Indian);
   console.log('Song: ' + item.song);
   if(item.happy > item.sad){
     happy.push(item.song);
@@ -71,6 +76,7 @@ Enter your emotion into the box:
     
     console.log(happy);
     console.log(sad);
+    console.log(Indian);
        //document.getElementById("song").innerHTML = JSON.stringify(data);
        getSongs();
     
