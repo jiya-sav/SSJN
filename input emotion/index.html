@@ -95,16 +95,16 @@ Enter a synonym for any of these emotions into the box:
     //document.getElementById("emotion").value = emotion;
    var type = document.getElementById("emotion").value;
    // synonyms are added by || type== ''
-   if(type=='joyous' || type == 'happy' || type== 'elated' || type== 'cheerful' || type== 'gleeful' || type== 'delighted' || type== 'jolly'){
+   if(type== 'joyous' || type == 'happy' || type== 'elated' || type== 'cheerful' || type== 'gleeful' || type== 'delighted' || type== 'jolly' || type== 'content' || type== 'euphoric' || type== 'merry' || type== 'cheery' || type== 'ecstatic' || type== 'thrilled' || type== 'blissful' || type== 'delighted'){
     document.getElementById("song").innerHTML = (GetRandom(happy));
      }
-   else if(type=='melancholy' || type=='sad' || type== 'unhappy' || type== 'dejected' || type== 'sorrowful' || type== 'depressed' || type== 'miserable' || type== 'pessimistic' || type== 'mournful' || type== 'heartbroken'){
+   else if(type== 'melancholy' || type== 'sad' || type== 'unhappy' || type== 'dejected' || type== 'sorrowful' || type== 'depressed' || type== 'miserable' || type== 'pessimistic' || type== 'mournful' || type== 'heartbroken'){
     document.getElementById("song").innerHTML = (GetRandom(sad));
       }
-   else if(type=='rage' || type== 'angry' || type== 'furious'){
+   else if(type== 'rage' || type== 'angry' || type== 'furious' || type== 'mad' || type== 'seething' || type== 'irate' || type== 'wrathful' || type== 'fuming' || type== 'exasperated' || type== 'enraged' || type== 'ballistic' || type== 'cranky'){
     document.getElementById("song").innerHTML = (GetRandom(rage));
       }
-   else if(type=='indian' || type=='desi' || type=='south asian' || type =='brown'){
+   else if(type== 'indian' || type== 'desi' || type== 'south asian' || type== 'brown' || type== 'ABCD'){
     document.getElementById("song").innerHTML = (GetRandom(Indian));
       }
     }
@@ -139,25 +139,16 @@ Enter a synonym for any of these emotions into the box:
   console.log('Song: ' + item.song);
 
   // tried together, if doesnt work, will try writing multiple if for each inequality
-  if(item.happy > item.sad){
+  if(item.happy > item.sad && item.happy > item.rage && item.happy > item.Indian){
     happy.push(item.song);
   }
-  if(item.happy > item.rage){
-    happy.push(item.song);
-  }
-  if(item.sad > item.rage){
+  if(item.sad > item.happy && item.sad > item.rage && item.sad > item.Indian){
     sad.push(item.song);
   }
-  if(item.sad > item.happy){
-    sad.push(item.song);
-  }
-  if(item.rage > item.happy){
+  if(item.rage > item.happy && item.rage > item.sad && item.rage > item.Indian){
     rage.push(item.song)
   }
-  if(item.rage > item.sad){
-    rage.push(item.song)
-  }
-  if(item.Indian > item.sad, item.happy){
+  if(item.Indian > item.happy && item.Indian > item.sad && item.Indian > item.rage){
     Indian.push(item.song);
   }
 });
