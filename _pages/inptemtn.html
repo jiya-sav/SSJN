@@ -38,6 +38,9 @@ Enter a synonym for any of these emotions into the box:
    else if(type=='rage' || type== 'angry' || type== 'furious'){
     document.getElementById("song").innerHTML = (GetRandom(rage));
       }
+   else if(type=='indian' || type=='desi' || type=='south asian' || type =='brown'){
+    document.getElementById("song").innerHTML = (GetRandom(Indian));
+      }
     }
 
    var emotion = document.getElementById("emotion").value;
@@ -49,6 +52,7 @@ Enter a synonym for any of these emotions into the box:
   var sad=[];
   var happy=[];
   var rage=[];
+  var Indian=[];
   // fetch - used to GET value from API
    const response = fetch(url, {
     method: "GET",
@@ -65,6 +69,7 @@ Enter a synonym for any of these emotions into the box:
   console.log('Happy: ' + item.happy);
   console.log('Sad: ' + item.sad);
   console.log('Rage: ' + item.rage);
+  console.log('Indian: ' + item.Indian);
   console.log('Song: ' + item.song);
   if(item.happy > item.sad, item.rage){
     happy.push(item.song);
@@ -75,11 +80,15 @@ Enter a synonym for any of these emotions into the box:
   if(item.rage > item.happy, item.sad){
     rage.push(item.song);
   }
+  if(item.Indian > item.sad, item.happy){
+    Indian.push(item.song);
+  }
 });
     
     console.log(happy);
     console.log(sad);
     console.log(rage);
+    console.log(Indian);
        //document.getElementById("song").innerHTML = JSON.stringify(data);
        getSongs();
     
