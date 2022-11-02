@@ -130,14 +130,25 @@ window.onload = wrap_img;
   console.log('Sad: ' + item.sad);
   console.log('Rage: ' + item.rage);
   console.log('Song: ' + item.song);
-  if(item.happy > item.sad, item.rage){
+
+  // tried together, if doesnt work, will try writing multiple if for each inequality
+  if(item.happy > item.sad){
     happy.push(item.song);
   }
-  if(item.sad > item.happy, item.rage){
+  if(item.happy > item.rage){
+    happy.push(item.song);
+  }
+  if(item.sad > item.rage){
     sad.push(item.song);
   }
-  if(item.rage > item.happy, item.sad){
-    rage.push(item.song);
+  if(item.sad > item.happy){
+    sad.push(item.song);
+  }
+  if(item.rage > item.happy){
+    rage.push(item.song)
+  }
+  if(item.rage > item.sad){
+    rage.push(item.song)
   }
 });
     
