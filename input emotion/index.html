@@ -98,12 +98,11 @@ window.onload = wrap_img;
      }
    else if(type=='melancholy' || type=='sad' || type== 'unhappy' || type== 'dejected' || type== 'sorrowful' || type== 'depressed' || type== 'miserable' || type== 'pessimistic' || type== 'mournful' || type== 'heartbroken'){
     document.getElementById("song").innerHTML = (GetRandom(sad));
-     }
-   else if(type=='indian' || type == 'desi' || type=='brown' || type=='south asian' || type=='abcd'){
-    document.getElementById("song").innerHTML = (GetRandom(Indian));
-     }
-      
-   }
+      }
+   else if(type=='rage' || type== 'angry' || type== 'furious'){
+    document.getElementById("song").innerHTML = (GetRandom(rage));
+      }
+    }
 
    var emotion = document.getElementById("emotion").value;
   
@@ -113,6 +112,7 @@ window.onload = wrap_img;
   
   var sad=[];
   var happy=[];
+  var rage=[];
   // fetch - used to GET value from API
    const response = fetch(url, {
     method: "GET",
@@ -128,19 +128,22 @@ window.onload = wrap_img;
   console.log('ID: ' + item.id);
   console.log('Happy: ' + item.happy);
   console.log('Sad: ' + item.sad);
-  console.log('Indian: ' + item.Indian);
+  console.log('Rage: ' + item.rage);
   console.log('Song: ' + item.song);
-  if(item.happy > item.sad){
+  if(item.happy > item.sad, item.rage){
     happy.push(item.song);
   }
-  if(item.sad > item.happy){
+  if(item.sad > item.happy, item.rage){
     sad.push(item.song);
+  }
+  if(item.rage > item.happy, item.sad){
+    rage.push(item.song);
   }
 });
     
     console.log(happy);
     console.log(sad);
-    console.log(Indian);
+    console.log(rage);
        //document.getElementById("song").innerHTML = JSON.stringify(data);
        getSongs();
     
