@@ -79,7 +79,7 @@ window.onload = wrap_img;
 
 <form onsubmit="return false">
   <!-- On Enter the Input box was getting cleared. So added onsubmit=return false-->
-    <label for="emotion">Feeling Emotional?</label><br>
+    <label for="emotion">Feeling Emotional? Type in an adjective that describes your current emotion, in all lowercase letters.</label><br>
     <input type="text" id="emotion" name="emotion"><br>
     <button id="runAPI" onclick="getSongs()">Get Songs</button>
     <!-- <input type="submit" value="generate songs"> -->
@@ -103,7 +103,7 @@ window.onload = wrap_img;
     document.getElementById("song").innerHTML = (GetRandom(rage));
       }
    else if(type=='indian' || type=='desi' || type=='south asian' || type =='brown'){
-    document.getElementById("song").innerHTML = (GetRandom(Indian));
+    document.getElementById("song").innerHTML = (GetRandom(indian));
       }
     }
 
@@ -116,7 +116,7 @@ window.onload = wrap_img;
   var sad=[];
   var happy=[];
   var rage=[];
-  var Indian=[];
+  var indian=[];
   // fetch - used to GET value from API
    const response = fetch(url, {
     method: "GET",
@@ -133,37 +133,31 @@ window.onload = wrap_img;
   console.log('Happy: ' + item.happy);
   console.log('Sad: ' + item.sad);
   console.log('Rage: ' + item.rage);
-  console.log('Indian: ' + item.Indian);
+  console.log('Indian: ' + item.indian);
   console.log('Song: ' + item.song);
 
   // tried together, if doesnt work, will try writing multiple if for each inequality
-  if(item.happy > item.sad){
+  if(item.happy > item.sad && item.happy > item.rage && item.happy > item.indian){
     happy.push(item.song);
   }
-  if(item.happy > item.rage){
-    happy.push(item.song);
-  }
-  if(item.sad > item.rage){
+
+  if(item.sad > item.happy && item.sad > item.rage && item.sad > item.indian){
     sad.push(item.song);
   }
-  if(item.sad > item.happy){
-    sad.push(item.song);
-  }
-  if(item.rage > item.happy){
+
+  if(item.rage > item.happy && item.rage > item.sad && item.rage > item.indian){
     rage.push(item.song)
   }
-  if(item.rage > item.sad){
-    rage.push(item.song)
-  }
-  if(item.Indian > item.sad, item.happy){
-    Indian.push(item.song);
+
+  if(item.indian > item.happy && item.indian > item.sad && item.indian > item.rage){
+    indian.push(item.song);
   }
 });
     
     console.log(happy);
     console.log(sad);
     console.log(rage);
-    console.log(Indian);
+    console.log(indian);
        //document.getElementById("song").innerHTML = JSON.stringify(data);
        getSongs();
     
