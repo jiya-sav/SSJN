@@ -5,7 +5,7 @@ title: Input Emotion
 search_exclude: true
 ---
 
-Enter a synonym for any of these emotions into the box. Make sure all letters are lowercase! 
+<span class="bolded">Enter a synonym for any of these emotions into the box.Type in an adjective that describes your current emotion. Make sure all letters are lowercase!</span>
 <ul>
   <li>Melancholy</li>
   <li>Joy</li>
@@ -16,7 +16,7 @@ Enter a synonym for any of these emotions into the box. Make sure all letters ar
 
 <form onsubmit="return false">
   <!-- On Enter the Input box was getting cleared. So added onsubmit=return false-->
-    <label for="emotion">Feeling Emotional? Type in an adjective that describes your current emotion, in all lowercase letters.</label><br>
+    <label for="emotion">Feeling Emotional?</label><br>
     <input type="text" id="emotion" name="emotion"><br>
     <button id="runAPI" onclick="getSongs()">Get Songs</button>
     <!-- <input type="submit" value="generate songs"> -->
