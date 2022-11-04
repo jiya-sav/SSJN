@@ -17,4 +17,16 @@ title: Team Project Screenshots
 ![]({{ site.baseurl }}/images/2022-11-04_(6).png)
 
 ## Flask Page:
-![]({{ site.baseurl }}/images/SSJN_plan.jpeg)
+### song api python file
+![]({{ site.baseurl }}/images/2022-11-04_(7).png)
+![]({{ site.baseurl }}/images/2022-11-04_(8).png)
+![]({{ site.baseurl }}/images/2022-11-04_(9).png)
+![]({{ site.baseurl }}/images/2022-11-04_(10).png)
+
+### model songs python file
+![]({{ site.baseurl }}/images/2022-11-04_(11).png)
+![]({{ site.baseurl }}/images/2022-11-04_(12).png)
+![]({{ site.baseurl }}/images/2022-11-04_(13).png)
+![]({{ site.baseurl }}/images/2022-11-04_(14).png)
+![]({{ site.baseurl }}/images/2022-11-04_(15).png)
+![]({{ site.baseurl }}/images/2022-11-04_(16).png)
