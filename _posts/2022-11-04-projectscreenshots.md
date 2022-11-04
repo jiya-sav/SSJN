@@ -7,7 +7,7 @@ title: Team Project Screenshots
 
 ## Github Fastpages
 ### "input emotion" page
-![]({{ site.baseurl }}/images/2022-11-04_(1).png)
+![]({{ site.baseurl }}/images/2022-11-04(1).png)
 ![]({{ site.baseurl }}/images/2022-11-04_(2).png)
 
 ### song api md file
