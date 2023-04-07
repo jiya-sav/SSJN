@@ -1,6 +1,6 @@
 ---
 toc: true
-layout: post
+layout: base
 categories: [markdown, Week 5]
 title: Team Agile Methodology Charts
 ---
@@ -10,3 +10,5 @@ title: Team Agile Methodology Charts
 
 ## Below is our Team Chart:
 ![]({{ site.baseurl }}/images/SSJN_plan.jpeg)
+
+post

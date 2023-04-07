@@ -1,6 +1,6 @@
 ---
 toc: true
-layout: post
+layout: base
 description: SSJN's Group Project Purpose Description.
 categories: [markdown]
 title: SSJN Project Purpose

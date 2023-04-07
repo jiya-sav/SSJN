@@ -1,6 +1,6 @@
 ---
 toc: true
-layout: post
+layout: base
 categories: [markdown]
 title: Project Week 1 Blog
 ---
@@ -22,3 +22,5 @@ Solution: To solve this error, quite simply, we read the instructions in the err
 Error fixed:
 
 ![]({{ site.baseurl }}/images/errorfix.png)
+
+post

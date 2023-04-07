@@ -1,6 +1,6 @@
 ---
 toc: true
-layout: post
+layout: base
 categories: [markdown]
 title: Team Project Screenshots
 ---
@@ -30,3 +30,5 @@ title: Team Project Screenshots
 ![]({{ site.baseurl }}/images/2022-11-04(14).png)
 ![]({{ site.baseurl }}/images/2022-11-04(15).png)
 ![]({{ site.baseurl }}/images/2022-11-04(16).png)
+
+post
