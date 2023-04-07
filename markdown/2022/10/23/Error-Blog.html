@@ -70,52 +70,25 @@ window.onload = wrap_img;
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+        <p>Error on Web Domain</p>
 
-  <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Project Week 1 Blog</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-10-23T00:00:00-05:00" itemprop="datePublished">
-        Oct 23, 2022
-      </time>
-       • <span class="read-time" title="Estimated read time">
-    
-    
-      1 min read
-    
-</span></p>
-
-    
-      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
-      
-        <a class="category-tags-link" href="/SSJN/categories/#markdown">markdown</a>
-        
-      
-      </p>
-    
-
-    </header>
-
-  <div class="post-content e-content" itemprop="articleBody">
-    <ul id="toc" class="section-nav">
-</ul><p>Error on Web Domain</p>
-
-<p><img src="/SSJN/images/badgatewayerror.png" alt=""></p>
+<p><img src="/SSJN/images/badgatewayerror.png" alt="" /></p>
 
 <p>Error, non-functional curl</p>
 
-<p><img src="/SSJN/images/curlerror.png" alt=""></p>
+<p><img src="/SSJN/images/curlerror.png" alt="" /></p>
 
 <p>Error</p>
 
-<p><img src="/SSJN/images/errorp1.png" alt=""></p>
+<p><img src="/SSJN/images/errorp1.png" alt="" /></p>
 
 <p>Solution: To solve this error, quite simply, we read the instructions in the error message. In the error message, we noticed that “persistent_volume:/app/volumes” and “/home/ubuntu/SSJN_flask/volumes” were the place where our error sat. Recognizing that these directories were part of the docker compose file, we went back to our docker compose file to investigate. We remembered we’d changed the name of our flask repository on AWS from SSJN_flask to p3t2_ssjn_flask, but this change hadn’t been reflected in the docker compose file. So, we quickly changed the “device” to p3t2_ssjn_flask instead of SSJN_flask. The next time we tried to run the sudo docker/compose up -d command, it worked. However, it first asked us to use the -rm command to start routing our changes to the new file. It only took us 10 minutes to fix this big error! This demonstrates that our whole team truly has a thorough understanding of how AWS deployment works.</p>
 
 <p>Error fixed:</p>
 
-<p><img src="/SSJN/images/errorfix.png" alt=""></p>
+<p><img src="/SSJN/images/errorfix.png" alt="" /></p>
 
-  </div><a class="u-url" href="/SSJN/markdown/2022/10/23/Error-Blog.html" hidden></a>
-</article>
+<p>post</p>
 
       </div>
     </main><footer class="site-footer h-card">
@@ -126,7 +99,7 @@ window.onload = wrap_img;
     <div class="footer-col-wrapper">
       <div class="footer-col">
         <p class="feed-subscribe">
-          <a href="/SSJN/feed.xml">
+          <a href="https://jiya-sav.github.io/SSJN/feed.xml">
             <svg class="svg-icon orange">
               <use xlink:href="/SSJN/assets/minima-social-icons.svg#rss"></use>
             </svg><span>Subscribe</span>
@@ -138,7 +111,7 @@ window.onload = wrap_img;
       </div>
     </div>
 
-    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/fastai" target="_blank" title="fastai"><svg class="svg-icon grey"><use xlink:href="/SSJN/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/fastdotai" target="_blank" title="fastdotai"><svg class="svg-icon grey"><use xlink:href="/SSJN/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+    <div class="social-links"><ul class="social-media-list"></ul>
 </div>
 
   </div>
