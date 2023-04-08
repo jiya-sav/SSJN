@@ -58,7 +58,7 @@ search_exclude: true
    const response = fetch(url, {
     method: "GET",
     headers: { "Content-Type": "application/json" },
-    mode: "cors",
+    mode: "no-cors", // "cors",
     cache: 'default', // *default, no-cache, reload, force-cache, only-if-cached
     credentials: 'omit' // include, *same-origin, omit
   }).then(response=> 
