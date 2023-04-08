@@ -122,7 +122,7 @@ window.onload = wrap_img;
    const response = fetch(url, {
     method: "GET",
     headers: { "Content-Type": "application/json" },
-    mode: "no-cors", // "cors",
+    mode: "cors", // "cors",
     cache: 'default', // *default, no-cache, reload, force-cache, only-if-cached
     credentials: 'omit' // include, *same-origin, omit
   }).then(response=> 
