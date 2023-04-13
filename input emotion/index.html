@@ -86,26 +86,31 @@ window.onload = wrap_img;
     <!-- <input type="submit" value="generate songs"> -->
     <p>Song For You:</p>
     <p id="song"></p>
+    <p id="error"></p>
   </form>
 
   <script>
    
-   function getSongs(){
+  function getSongs(){
     //document.getElementById("emotion").value = emotion;
-   var type = document.getElementById("emotion").value;
+  var type = document.getElementById("emotion").value;
    // synonyms are added by || type== ''
-   if(type=='joyous' || type == 'happy' || type== 'elated' || type== 'cheerful' || type== 'content' || type== 'gleeful' || type== 'delighted' || type== 'jolly'){
+    if(type=='joyous' || type == 'happy' || type== 'elated' || type== 'cheerful' || type== 'content' || type== 'gleeful' || type== 'delighted' || type== 'jolly'){
     document.getElementById("song").innerHTML = (GetRandom(happy));
      }
-   else if(type=='melancholy' || type=='sad' || type== 'unhappy' || type== 'dejected' || type== 'sorrowful' || type== 'depressed' || type== 'miserable' || type== 'pessimistic' || type== 'mournful' || type== 'heartbroken'){
-    document.getElementById("song").innerHTML = (GetRandom(sad));
+      else if(type=='melancholy' || type=='sad' || type== 'unhappy' || type== 'dejected' || type== 'sorrowful' || type== 'depressed' || type== 'miserable' || type== 'pessimistic' || type== 'mournful' || type== 'heartbroken'){
+      document.getElementById("song").innerHTML = (GetRandom(sad));
+        }
+      else if(type=='rage' || type== 'angry' || type== 'furious'){
+      document.getElementById("song").innerHTML = (GetRandom(rage));
+        }
+      else if(type=='indian' || type=='desi' || type=='south asian' || type =='brown'){
+      document.getElementById("song").innerHTML = (GetRandom(indian));
+        }
+      else {
+      document.getElementById("song").textContent = "Input song, check that your input is lowercase, or try different word.";
       }
-   else if(type=='rage' || type== 'angry' || type== 'furious'){
-    document.getElementById("song").innerHTML = (GetRandom(rage));
-      }
-   else if(type=='indian' || type=='desi' || type=='south asian' || type =='brown'){
-    document.getElementById("song").innerHTML = (GetRandom(indian));
-      }
+    
     }
 
    var emotion = document.getElementById("emotion").value;
