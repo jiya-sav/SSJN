@@ -42,6 +42,10 @@ search_exclude: true
    else if(type=='indian' || type=='desi' || type=='south asian' || type =='brown'){
     document.getElementById("song").innerHTML = (GetRandom(indian));
       }
+   else {
+    document.write("Please check that your input is in lowercase, or try different word.")
+   }
+    
     }
 
    var emotion = document.getElementById("emotion").value;
