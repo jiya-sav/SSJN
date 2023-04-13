@@ -5,12 +5,12 @@ title: Input Emotion
 search_exclude: true
 ---
 
-<strong>Enter a synonym for any of these emotions into the box.Type in an adjective that describes your current emotion. Make sure all letters are lowercase!</strong>
+<strong>Enter a synonym for any of these emotions into the box. Type in an adjective that describes your current emotion. Make sure all letters are lowercase!</strong>
 <ul>
-  <li>Melancholy</li>
-  <li>Joy</li>
-  <li>Rage</li>
-  <li>Indian</li>
+  <li>melancholy</li>
+  <li>joy</li>
+  <li>rage</li>
+  <li>indian</li>
 </ul>
 <a href="https://jiya-sav.github.io/SSJN/data/songs" class="btn btn-primary">Vote for Songs Here!</a>
 
@@ -43,8 +43,11 @@ search_exclude: true
       else if(type=='indian' || type=='desi' || type=='south asian' || type =='brown'){
       document.getElementById("song").innerHTML = (GetRandom(indian));
         }
+      else if(type==''){
+      document.getElementById("song").innerHTML = "Please input song";
+        }
       else {
-      document.getElementById("song").textContent = "Input song, check that your input is lowercase, or try different word.";
+      document.getElementById("song").textContent = "Check that your input is lowercase, or try different word.";
       }
     
     }
